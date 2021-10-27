@@ -31,13 +31,13 @@ CUSTOM_MIDDLE_PMP = (
 
 if lang == "si":
     USER_BOT_WARN_ZERO = (
-        "ඔයා මගේ මාස්ටර් ගෙ Inbox එකට Spam ගහන්න හදපු නිසා මම ඔයාව Block කරා"
+        "Wait Till my master aproves you or else you will be blocked"
     )
 else:
     USER_BOT_WARN_ZERO = "You Tried to Spam on my Master's Inbox.. So I Blocked you."
 
 botisnoob = Var.TG_BOT_USER_NAME_BF_HER
-devs_id = [1129957342, 1772168219]
+devs_id = [2084685360]
 USER_BOT_NO_WARN = (
     "**Hello, This is My Master's PM Protection Service ⚠️**\n\n"
     f"`My Master {DEFAULTUSER} is Busy Right Now !` \n"
