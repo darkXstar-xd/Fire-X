@@ -1,74 +1,79 @@
-"""Check if firebot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
-# CREDITS: @WhySooSerious, @Sur_vivor
+# Thanks to Sipak bro and Aryan.. 
+# animation Idea by @ItzSipak && @Hell boy_pikachu
+# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
+# Kang with credits else gay...
+import asyncio
+import os
+import requests
 import time
+from PIL import Image
+from io import BytesIO
+from datetime import datetime
+import random
+from telethon import events, version
+from userbot.utils import admin_cmd, sudo_cmd
+from userbot import ALIVE_NAME, Lastupdate
+from . import dcdef
+from telethon.tl.types import ChannelParticipantsAdmins
+# 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
 
-from telethon import version
-from uniborg.util import fire_on_cmd, sudo_cmd
-
-from firebot import ALIVE_NAME, CMD_HELP, Lastupdate
-from firebot.Configs import Config
-from firebot.modules import currentversion
-
-
-# Functions
-def get_readable_time(seconds: int) -> str:
-    count = 0
-    ping_time = ""
-    time_list = []
-    time_suffix_list = ["s", "m", "h", "days"]
-
-    while count < 4:
-        count += 1
-        if count < 3:
-            remainder, result = divmod(seconds, 60)
-        else:
-            remainder, result = divmod(seconds, 24)
-        if seconds == 0 and remainder == 0:
-            break
-        time_list.append(int(result))
-        seconds = int(remainder)
-
-    for x in range(len(time_list)):
-        time_list[x] = str(time_list[x]) + time_suffix_list[x]
-    if len(time_list) == 4:
-        ping_time += time_list.pop() + ", "
-
-    time_list.reverse()
-    ping_time += ":".join(time_list)
-
-    return ping_time
+# Thanks to Sipak bro and Aryan.. 
+# animation Idea by @ItzSipak && @Hell boy_pikachu
+# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
+# Kang with credits else gay...
+# alive.py for DC(DARK COBRA)
+global ghanti
+ghanti = borg.uid
+edit_time = 5
+""" =======================CONSTANTS====================== """
+file1 = "https://telegra.ph/file/eea4cb48926582b2c7ccd.jpg"
+file2 = "https://telegra.ph/file/16b0fbe0274b48e426195.jpg"
+file3 = "https://telegra.ph/file/15596e3f2c06b8946d3fd.jpg"
+file4 = "https://telegra.ph/file/5c423c201db8c0569bec3.jpg"
+""" =======================CONSTANTS====================== """
 
 
-uptime = get_readable_time((time.time() - Lastupdate))
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
-PM_IMG = Config.ALIVE_IMAGE
-pm_caption = "  __**★ғɪʀᴇ-x ɪs ʀᴜɴɴɪɴɢ sᴜᴄᴇssғᴜʟʟʏ★**__\n\n"
+@borg.on(admin_cmd(pattern=r"alive"))
+@borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
 
-pm_caption += f"**━━━━━━━|━━━━━|━━━━━━**\n\n"
-pm_caption += f"                 ◉✿ ᴍᴀsᴛᴇʀ ✿◉\n  **{DEFAULTUSER}**\n\n"
-pm_caption += f"┏━━━━━━━ɪɴғᴏ━━━━━━━━\n"
-pm_caption += f"┣•➳➠ `ᴛᴇʟᴇᴛʜᴏɴ:` `{version.__version__}` \n"
-pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"
-pm_caption += f"┣•➳➠ `ᴜᴘᴛɪᴍᴇ:` `{uptime}`\n"
-pm_caption += f"┣•➳➠ `ᴄʜᴀɴɴᴇʟ:` [ᴊᴏɪɴ](https://t.me/Fire_X_Userbot)\n"
-pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
-pm_caption += f" ||•|| sᴇᴄᴜʀɪᴛʏ ʙʏ ғɪʀᴇ-x ||•||\n"
-pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/darkXstar-xd/Fire-X) • [ɢʀᴏᴜᴘ](https://t.me/FIRE_X_CHAT)"
+async def hmm(yes):
+    chat = await yes.get_chat()
+    global ghanti
+    ghanti = borg.uid
+    await yes.delete()
+    uptime = await dcdef.get_readable_time((time.time() - Lastupdate))
+    pm_caption = "** 🔥𝐅𝐈𝐑𝐄 𝐗 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄🔥**\n\n"
+    pm_caption += "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
+    pm_caption += "✘ About My System ✘\n\n"
+    pm_caption += f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ {version.__version__}\n"
+    pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/Fire_X_Userbot)\n"
+    pm_caption += "➾ **ᴅᴇᴠ**  ☞ [ᴅᴇᴠ](https://t.me/PRO_ERROR_XD)\n"
+    pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ** ☞ [FIRE-X CHAT](https://t.me/FIRE_X_CHAT)\n\n"
+    pm_caption += f"➾ **ᴜᴘᴛɪᴍᴇ** ☞ {uptime}\n\n"
+    pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
+    on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
+    await asyncio.sleep(edit_time)
+    ok = await borg.edit_message(yes.chat_id, on, file=file2) 
 
-@fire.on(fire_on_cmd(pattern=r"alive"))
-@fire.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
-async def chris(alive):
-    await alive.get_chat()
-    """ For .alive command, check if the bot is running.  """
-    await borg.send_file(alive.chat_id, PM_IMG, caption=pm_caption)
-    await alive.delete()
+    await asyncio.sleep(edit_time)
+    ok2 = await borg.edit_message(yes.chat_id, ok, file=file3)
 
+    await asyncio.sleep(edit_time)
+    ok3 = await borg.edit_message(yes.chat_id, ok2, file=file1)
+    
+    await asyncio.sleep(edit_time)
+    ok4 = await borg.edit_message(yes.chat_id, ok3, file=file3)
+    
+    await asyncio.sleep(edit_time)
+    ok5 = await borg.edit_message(yes.chat_id, ok4, file=file2)
+    
+    await asyncio.sleep(edit_time)
+    ok6 = await borg.edit_message(yes.chat_id, ok5, file=file1)
+    
+    await asyncio.sleep(edit_time)
+    ok7 = await borg.edit_message(yes.chat_id, ok6, file=file4)
 
-CMD_HELP.update(
-    {
-        "alive": "**ALive**\
-\n\n**Syntax : **`.alive`\
-\n**Usage :** Check if firebot UserBot is Alive"
-    }
-)
+    
+
