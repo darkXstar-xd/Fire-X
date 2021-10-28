@@ -53,7 +53,7 @@ pm_caption += f"┣•➳➠ `ᴜᴘᴛɪᴍᴇ:` `{uptime}`\n"
 pm_caption += f"┣•➳➠ `ᴄʜᴀɴɴᴇʟ:` [ᴊᴏɪɴ](https://t.me/Fire_X_userbot)\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
 pm_caption += f" ||•|| sᴇᴄᴜʀɪᴛʏ ʙʏ ғɪʀᴇ-x ||•||\n"
-pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/darkXstar-xd/Fire-X) • [ɢʀᴏᴜᴘ](https://t.me/Fire_X_chat)"
+pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/darkXstar-xd/Fire-X) • [ɢʀᴏᴜᴘ](https://t.me/Fire_X_chat)• [ᴅᴇᴠ](https://t.me/pro_error_xd)"
 
 
 @fire.on(fire_on_cmd(pattern=r"alive"))
