@@ -17,7 +17,7 @@ def get_readable_time(seconds: int) -> str:
     time_list = []
     time_suffix_list = ["s", "m", "h", "days"]
 
-    while count < 4:
+    while count < 5:
         count += 1
         if count < 3:
             remainder, result = divmod(seconds, 60)
