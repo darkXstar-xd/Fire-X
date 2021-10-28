@@ -17,7 +17,7 @@ def get_readable_time(seconds: int) -> str:
     time_list = []
     time_suffix_list = ["s", "m", "h", "days"]
 
-    while count < 5:
+    while count < 4:
         count += 1
         if count < 3:
             remainder, result = divmod(seconds, 60)
@@ -51,7 +51,6 @@ pm_caption += f"┣•➳➠ `ᴛᴇʟᴇᴛʜᴏɴ:` `{version.__version__}` \n
 pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"
 pm_caption += f"┣•➳➠ `ᴜᴘᴛɪᴍᴇ:` `{uptime}`\n"
 pm_caption += f"┣•➳➠ `ᴄʜᴀɴɴᴇʟ:` [ᴊᴏɪɴ](https://t.me/Fire_X_CHANNEL)\n"
-pm_caption += f"┣•➳➠ `ᴅᴇᴠ:` [ᴅᴇᴠ](https://t.me/pro_error_xd)\n 
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
 pm_caption += f" ||•|| sᴇᴄᴜʀɪᴛʏ ʙʏ ғɪʀᴇ-x ||•||\n"
 pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/darkXstar-xd/Fire-X) • [ɢʀᴏᴜᴘ](https://t.me/Fire_X_Chat)"
