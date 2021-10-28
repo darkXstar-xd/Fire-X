@@ -1,7 +1,7 @@
 <p align="center">
    
    <a href="https://github.com/darkXstar-xd/Fire-X">
-      <img src="https://telegra.ph/file/8ef77fa2714b1b0ec44e7.mp4" alt="firex", height="300px",width="300px">
+      <img src="https://telegra.ph/file/4331bf39a9ee939a65ff5.jpg" alt="firex", height="300px",width="300px">
    </a>
    <br>
    <b>Fire-X UserBot</b><br>
